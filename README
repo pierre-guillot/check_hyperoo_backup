@@ -1,0 +1,13 @@
+check_hyperoo_backup : a vbs script to monitor your hyperoo backup (www.hyperoo.net)
+
+Usage: check_hyperoo /backup:<value> /warning:<value> /critical:<value>
+
+/backup                       Name Of the Backup (Case sensitive)
+/warning                      Number of hours since last backup (Warn)
+/critical                     Number of hours since last backup (Crit)
+
+Exemple :
+
+C:\Program Files\NSClient++>cscript scripts\check_hyperoo.vbs /backup:"Hyperv-2 Journalier" /warning:10 /critical:15
+
+OK: backup Hyperv-2 Journalier is OK
